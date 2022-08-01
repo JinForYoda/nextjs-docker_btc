@@ -29,8 +29,8 @@ To add support for Docker to an existing project, just copy the `Dockerfile` int
 ```js
 // next.config.js
 module.exports = {
-  // ... rest of the configuration.
-  output: 'standalone',
+	// ... rest of the configuration.
+	output: 'standalone',
 }
 ```
 
@@ -44,9 +44,9 @@ This will build the project as a standalone app inside the Docker image.
 1. Build your container image using Cloud Build: `gcloud builds submit --tag gcr.io/PROJECT-ID/helloworld --project PROJECT-ID`. This will also enable Cloud Build for your project.
 1. Deploy to Cloud Run: `gcloud run deploy --image gcr.io/PROJECT-ID/helloworld --project PROJECT-ID --platform managed`. Choose a region of your choice.
 
-   - You will be prompted for the service name: press Enter to accept the default name, `helloworld`.
-   - You will be prompted for [region](https://cloud.google.com/run/docs/quickstarts/build-and-deploy#follow-cloud-run): select the region of your choice, for example `us-central1`.
-   - You will be prompted to **allow unauthenticated invocations**: respond `y`.
+    - You will be prompted for the service name: press Enter to accept the default name, `helloworld`.
+    - You will be prompted for [region](https://cloud.google.com/run/docs/quickstarts/build-and-deploy#follow-cloud-run): select the region of your choice, for example `us-central1`.
+    - You will be prompted to **allow unauthenticated invocations**: respond `y`.
 
 Or click the button below, authorize the script, and select the project and region when prompted:
 
